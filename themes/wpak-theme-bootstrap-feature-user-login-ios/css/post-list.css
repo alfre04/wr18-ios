@@ -1,0 +1,84 @@
+/*
+ * common.css : general rules (applied to all templates)
+ * post-list.css : archive.html specific rules
+ * post-detail.css : single.html and page.html specific rules
+ */
+
+
+
+/*
+ * List item
+ */
+
+#date-post{
+    position: absolute;
+    color: #fff;
+    left: 5px;
+    top: 5px;
+    font-size: 12px;
+}
+
+.list-template .content-item {
+    position:relative;
+}
+
+.list-template .content-item a {
+	color: #4c4c4c;
+    margin: 25px 20px 25px 20px;
+    display: block;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    position: relative;
+}
+
+.list-template h2 {
+	margin: 0;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    line-height: 22px;
+}
+
+.list-template h2 span{
+    margin: 10px;
+    display: block;
+}
+
+.list-template .content-thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px 0px 0px;
+    display: block; /* Done to avoid bottom margin bug */
+}
+
+
+
+/*
+ * Get more button
+ */
+
+.get-more-button-wrapper {
+    padding: 0px 20px 0px 20px;
+}
+
+.get-more-button {
+    background-color: #168dd9;
+    border-radius: 2px;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 11px 14px 11px 14px;
+    margin: 20px 0px 20px 0px;
+    line-height: 24px;
+}
+
+/* Get more button spinner */
+.get-more-button .spinner {
+    width: 24px;
+    height: 24px;
+}
