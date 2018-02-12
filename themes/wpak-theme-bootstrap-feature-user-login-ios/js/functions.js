@@ -311,7 +311,7 @@ define([
          * @todo messages should be centralized to ease translations
          */
 		if ( result.ok ) {
-			showMessage("Content updated successfully");
+			showMessage("Contenido actualizado con éxito");
 		}else{
 			showMessage(result.message);
 		}
@@ -901,7 +901,5 @@ define([
    
 	   return template_args;
 	} );
-	
-	window.ga.startTrackerWithId('UA-113623932-1', 30);
 
 } );
