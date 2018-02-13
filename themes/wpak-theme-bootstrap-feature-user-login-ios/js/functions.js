@@ -384,6 +384,8 @@ define([
                 $('#app-header > h1').html(current_screen.label);
             }
             
+            $("#app-footer").css("display","block");
+            
             // Scroll position is handled in the preparation of the transition (transition_slide_previous_screen)
         }
 
@@ -403,7 +405,8 @@ define([
                 $('#app-header > h1').html('Article');
             }
             
-            $(".app-screen").css("bottom","50");
+            $("#app-footer").css("display","none");
+            $("#single-content").css("margin-bottom","50px");
 
         }
 
@@ -414,6 +417,8 @@ define([
             if ( $('#app-header > h1').html() != '' ) {
                 $('#app-header > h1').html('');
             }
+            
+            $("#app-footer").css("display","block");
 
         }
                         
