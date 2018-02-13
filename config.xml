@@ -44,7 +44,7 @@
 	<icon src="icons/icon.png" gap:platform="ios" width="57" height="57" />
 	<icon src="icons/icon-small.png" gap:platform="ios" width="29" height="29" />
 	
-	<!--<gap:splash src="splashscreens/Default-736h-Lanscape@3x~iphone.png" gap:platform="ios" width="2208" height="1242" />
+	<gap:splash src="splashscreens/Default-736h-Lanscape@3x~iphone.png" gap:platform="ios" width="2208" height="1242" />
 	<gap:splash src="splashscreens/Default-736h-Portrait@3x~iphone.png" gap:platform="ios" width="1242" height="2208" />
 	<gap:splash src="splashscreens/Default-667h-Landscape@2x~iphone.png" gap:platform="ios" width="1334" height="750" />
 	<gap:splash src="splashscreens/Default-667h-Portrait@2x~iphone.png" gap:platform="ios" width="750" height="1334" />
@@ -53,9 +53,9 @@
 	<gap:splash src="splashscreens/Default-Landscape@2x~iphone.png" gap:platform="ios" width="960" height="640" />
 	<gap:splash src="splashscreens/Default-Portrait@2x~iphone.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="splashscreens/Default-Landscape~iphone.png" gap:platform="ios" width="480" height="320" />
-	<gap:splash src="splashscreens/Default-Portrait~iphone.png" gap:platform="ios" width="320" height="480" />-->
+	<gap:splash src="splashscreens/Default-Portrait~iphone.png" gap:platform="ios" width="320" height="480" />
     
-    <splash src="splashscreens/Default@2x~iphone~anyany.png" />
+    <!--<splash src="splashscreens/Default@2x~iphone~anyany.png" />
     <splash src="splashscreens/Default@2x~iphone~comany.png" />
     <splash src="splashscreens/Default@2x~iphone~comcom.png" />
     <splash src="splashscreens/Default@3x~iphone~anyany.png" />
@@ -63,7 +63,7 @@
     <splash src="splashscreens/Default@3x~iphone~comany.png" />
     <splash src="splashscreens/Default@2x~ipad~anyany.png" />
     <splash src="splashscreens/Default@2x~ipad~comany.png" />
-    <splash src="splashscreens/Default@2x~universal~anyany.png" />
+    <splash src="splashscreens/Default@2x~universal~anyany.png" />-->
 
 
 	
