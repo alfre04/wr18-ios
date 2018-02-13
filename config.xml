@@ -54,7 +54,6 @@
 	<gap:splash src="splashscreens/Default-Portrait@2x~iphone.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="splashscreens/Default-Landscape~iphone.png" gap:platform="ios" width="480" height="320" />
 	<gap:splash src="splashscreens/Default-Portrait~iphone.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="splashscreens/Default@2x~universal~anyany.png" />
 
 	
 </widget>
