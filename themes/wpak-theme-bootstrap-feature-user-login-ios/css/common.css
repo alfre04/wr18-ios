@@ -132,12 +132,11 @@ a {
     overflow-y: scroll;
     position: absolute;
     top: 44px;
-    bottom: 50px;
+    bottom: 0;
     left: 0px;
 	width: 100%;
     background-color: #fff;
     -webkit-overflow-scrolling:touch; /* Enables scrolling bounce effect when reaching top or bottom */
-	padding-bottom: 50px;
 }
 
 /* When in slideup panel, no need to reserve place for toolbar */
@@ -460,6 +459,10 @@ div.spinner div.bar12 {
 
 #post-feedback{
 	height: auto !important;
+}
+
+.has-ripple-feedback:not(:last-child) {
+    padding-bottom: 50px;
 }
 
 .footer-content{
