@@ -403,7 +403,7 @@ define([
                 $('#app-header > h1').html('Article');
             }
             
-            $(".app-screen").css("bottom","0");
+            $(".app-screen").css("bottom","50");
 
         }
 
