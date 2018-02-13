@@ -901,16 +901,5 @@ define([
    
 	   return template_args;
 	} );
-    
-    //if iphone
-    if (device.platform.indexOf('iOS')) {
-        //event focus/blur just iphone - bug fixed
-        $('#app-layout').on('focus', 'input:focus', function() {
-            $('#app-footer').css('position', 'absolute');
-        });
-        $('#app-layout').on('blur', 'input', function() {
-            $('#app-footer').css('position', 'fixed');
-        });
-    }
 
 } );

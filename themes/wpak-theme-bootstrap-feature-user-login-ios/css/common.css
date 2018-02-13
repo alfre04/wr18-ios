@@ -455,6 +455,7 @@ div.spinner div.bar12 {
     color: #fff;
     left: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+	transform: translate3d(0,0,0);
 }
 
 #post-feedback{
