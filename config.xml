@@ -12,15 +12,14 @@
 	<author href="http://www.llorenteycuenca.com" email="vvalverde@llorenteycuenca.com">Victor Valverde</author>
 
 	<gap:platform name="ios" />
+    <preference name = "phonegap-version" value = "cli-6.5.0" />
+
 	
 	<!-- General preferences -->
 	<preference name="permissions" value="none"/>
 
 	<preference name="DisallowOverscroll" value="true" />
-	<preference name="webviewbounce" value="false" />
-    
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
+	<preference name="webviewbounce" value="false" /> 
 
 	<!-- PhoneGap plugin declaration -->
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
