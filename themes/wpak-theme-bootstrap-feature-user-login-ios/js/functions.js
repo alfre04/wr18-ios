@@ -419,6 +419,7 @@ define([
             }
             
             $("#app-footer").css("display","block");
+            $("#single-content").css("margin-bottom","50px");
 
         }
                         
