@@ -447,7 +447,7 @@ div.spinner div.bar12 {
 /*CAMBIOS*/
 /*FOOTER*/
 #app-footer{
-	position: static;
+	position: fixed;
     bottom: 0;
     background: #fff;
     width: 100%;
