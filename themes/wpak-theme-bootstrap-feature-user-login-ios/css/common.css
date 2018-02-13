@@ -448,7 +448,6 @@ div.spinner div.bar12 {
 /*FOOTER*/
 #app-footer{
 	transform: translate3d(0,0,0);
-	
 	position: fixed;
     bottom: 0;
     background: #fff;
@@ -463,7 +462,7 @@ div.spinner div.bar12 {
 	height: auto !important;
 }
 
-.has-ripple-feedback:not(:last-child) {
+#content #post-feedback:last-child {
     padding-bottom: 50px;
 }
 
