@@ -363,14 +363,14 @@ define([
         
         // Close off-canvas menu
         if (isMenuOpen) {
-			$("#app-canvas").css("left","85%"); 
+			$("#app-canvas, #app-footer").css("left","85%"); 
 			closeMenu();
 		}
         
-        if (isMenuOpen) {
-			$("#app-footer").css("left","85%"); 
-			closeMenu();
-		}
+//        if (isMenuOpen) {
+//			$("#app-footer").css("left","85%"); 
+//			closeMenu();
+//		}
 
         /*
          * 3. Post list
@@ -542,7 +542,7 @@ define([
 
 		$("#menu-items").css("display","block");
         
-        $("#app-canvas").velocity({
+        $("#app-canvas, #app-footer").velocity({
 			left:"85%",
         }, {
             duration: 300,
@@ -553,16 +553,16 @@ define([
 			}
         });
         
-        $("#app-footer").velocity({
-			left:"85%",
-        }, {
-            duration: 300,
-            complete: function() {
-				setTimeout(function(){
-                    isMenuOpen=true;
-                },150);
-			}
-        });
+//        $("#app-footer").velocity({
+//			left:"85%",
+//        }, {
+//            duration: 300,
+//            complete: function() {
+//				setTimeout(function(){
+//                    isMenuOpen=true;
+//                },150);
+//			}
+//        });
     }
 
     // @desc Close off-canvas menu
@@ -572,7 +572,7 @@ define([
 
 		isMenuOpen = false;
 
-        $("#app-canvas").velocity({
+        $("#app-canvas, #app-footer").velocity({
 			left:"0",
 		},300, function() {
 
@@ -585,20 +585,20 @@ define([
 
         });
         
-        $("#app-footer").velocity({
-			left: "0",
-		}, {
-            duration: 300,
-            complete: function() {
-
-                $("#menu-items").css("display","none");
-
-                // We have tapped a menu item, let's open the corresponding screen
-                if (action==1) {
-                    App.navigate( menuItem.attr("href") );
-                }
-            }
-        });
+//        $("#app-footer").velocity({
+//			left: "0",
+//		}, {
+//            duration: 300,
+//            complete: function() {
+//
+//                $("#menu-items").css("display","none");
+//
+//                // We have tapped a menu item, let's open the corresponding screen
+//                if (action==1) {
+//                    App.navigate( menuItem.attr("href") );
+//                }
+//            }
+//        });
 	}
 
     // @desc Open or close off-canvas menu (based on isMenuOpen variable)
