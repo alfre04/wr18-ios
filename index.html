@@ -2,10 +2,7 @@
 <html>
 	<head>
 		<head>
-		<!--<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">-->
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
 		<script src="cordova.js"></script>
 		
 		<link rel="stylesheet" href="core/css/debug.css">
@@ -19,19 +16,13 @@
 			    wpak_open_url = url;
 			};
 			
-			if (Modernizr.touch) {
-				/* cache dom references */ 
-				var $body = jQuery('body'); 
+			var scroll = document.querySelector('#scroll'),
+			body = document.querySelector('#body');
 			
-				/* bind events */
-				$(document)
-				.on('focus', 'input', function() {
-					$body.addClass('fixfixed');
-				})
-				.on('blur', 'input', function() {
-					$body.removeClass('fixfixed');
-				});
-			} 
+			// check to keep reading an updating values
+			setInterval(function () {
+			  scroll.innerHTML = [window.pageYOffset, body.scrollTop, window.scrollY].join(' / ');
+			}, 10);
 		</script>
 
 		<script data-main="core/launch.js" src="vendor/require.js"></script>
