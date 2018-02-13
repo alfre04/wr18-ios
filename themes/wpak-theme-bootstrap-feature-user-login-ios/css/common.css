@@ -447,14 +447,22 @@ div.spinner div.bar12 {
 /*CAMBIOS*/
 /*FOOTER*/
 #app-footer{
-	position: fixed;
+	/*position: fixed;
     bottom: 0;
     background: #fff;
     width: 100%;
     z-index: 100;
     color: #fff;
     left: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);*/
+	
+	position:fixed ;
+	-webkit-backface-visibility: hidden;
+	top:0;
+	left:0;
+	width: 100px;
+	height:30px;
+	background: red;
 }
 
 #post-feedback{
