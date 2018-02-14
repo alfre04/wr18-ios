@@ -259,6 +259,10 @@
 	margin: 20px 0px 10px 0px;
 }
 
+.search-container{
+    margin-top: 20px;
+}
+
 #search-form{
     width: 91%;
     margin: 0 auto;
@@ -266,8 +270,8 @@
 }
 
 #search-form input{
-    border-bottom: 1px solid #0078ff;
-    border-radius: 0;
+    border: 1px solid #0078ff;
+    border-radius: 10px;
     color: #4c4c4c;
     width: 90%;
 }
