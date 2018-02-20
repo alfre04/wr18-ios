@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.llorente.wr2018"
         versionCode = ""
-        version     = "1.0" >
+        version     = "1.0.1" >
 
 	<name>WR2018</name>
 
@@ -12,6 +12,13 @@
 	<author href="http://www.llorenteycuenca.com" email="vvalverde@llorenteycuenca.com">Victor Valverde</author>
 
 	<gap:platform name="ios" />
+	
+	 <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter"/>
+        <param name="onload" value="true"/>
+    </feature>
+	 
+	 <allow-navigation href="*" />
 	
 	<!-- General preferences -->
 	<preference name="permissions" value="none"/>
