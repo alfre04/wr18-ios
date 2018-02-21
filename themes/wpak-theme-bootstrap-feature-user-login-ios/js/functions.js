@@ -6,9 +6,9 @@ define([
     'root/config',
     
 	'theme/js/bootstrap.min',
-//  'theme/js/auth/auth-pages',
-//  'theme/js/auth/simple-login', 
-//	'theme/js/auth/premium-posts',
+    'theme/js/auth/auth-pages',
+    'theme/js/auth/simple-login', 
+	'theme/js/auth/premium-posts',
 //  'theme/js/comments',
     
     'theme/js/moment.min',
@@ -36,7 +36,7 @@ define([
     try { // Testing if the Cordova plugin is available
         StatusBar.overlaysWebView(false);
         StatusBar.styleDefault();
-        StatusBar.backgroundColorByHexString("#F8F8F8");
+        StatusBar.backgroundColorByHexString("#963c45");
     } catch(e) {
         console.log("StatusBar plugin not available - you're probably in the browser");
     }
@@ -435,6 +435,10 @@ define([
             // Display videos and make them responsive
             // We defer video loading to keep transitions smooth
             loadAndFormatVideos();
+            
+            $("#app-header").css("display","block");
+			$("#app-menu").css("display","block");
+			$("#app-content-wrapper").removeClass("login-page");
 
 		}
 
