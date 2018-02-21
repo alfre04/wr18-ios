@@ -30,6 +30,7 @@ define( [ 'core/theme-app', 'core/modules/authentication' ], function( App, Auth
 			asked_fragment = '';
 			$("#app-header").css("display","none");
 			$("#app-menu").css("display","none");
+			$("#app-footer").css("display","none");
 		}
 		
 		if ( !user && queried_screen.screen_type != 'list' 
