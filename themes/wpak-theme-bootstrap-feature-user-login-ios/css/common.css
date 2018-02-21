@@ -599,20 +599,38 @@ input[type="checkbox"]{
     margin: 0 auto;
 }
 
-.template-login{
+#app-content-wrapper.login-page{
+	background-image: url(../img/login.png);
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.login-page .app-screen,
+.login-page .template-login{
+	background: transparent;
+}
+
+/*.template-login{
 	background: url(../img/login.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-}
+}*/
 
 #logo-login{
-	background: url(../img/logo-login-page.svg);
-    width: auto;
-    height: 200px;
+	background-image: url(../img/logo-login-page.svg);
+    width: 90%;
+    height: 80px;
     margin: 0 auto;
     background-size: auto;
-    margin-top: 35px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -649,4 +667,25 @@ input[type="checkbox"]{
     margin-top: 10px;
     border-top: 1px solid #b64e4a;
     display: block;
+}
+
+/*USER ID*/
+.clearfix-login{
+	width: 77%;
+    z-index: 1;
+    position: absolute;
+    top: 88%;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.clearfix-login a{
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+#logout{
+	color: #FFFFFF;
+	font-size: 18px;
 }

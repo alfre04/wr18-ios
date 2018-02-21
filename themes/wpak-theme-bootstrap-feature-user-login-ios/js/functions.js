@@ -386,6 +386,10 @@ define([
             
             $("#app-footer").css("display","block");
             
+            $("#app-header").css("display","block");
+			$("#app-menu").css("display","block");
+			$("#app-content-wrapper").removeClass("login-page");
+            
             // Scroll position is handled in the preparation of the transition (transition_slide_previous_screen)
         }
 
