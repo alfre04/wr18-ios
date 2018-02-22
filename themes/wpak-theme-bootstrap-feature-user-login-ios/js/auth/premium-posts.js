@@ -33,9 +33,7 @@ define( [ 'core/theme-app', 'core/modules/authentication' ], function( App, Auth
 			$("#app-footer").css("display","none");
 		}
 		
-		if ( !user && queried_screen.screen_type != 'list' 
-			 && queried_screen.item_id != 'login-page' 
-			 && queried_screen.item_id != 'user-page' ) {
+		if ( !user /*&& queried_screen.screen_type != 'list'*/ && queried_screen.item_id != 'login-page' && queried_screen.item_id != 'user-page' ) {
 			
 			asked_fragment = queried_screen.fragment;
 			App.navigate( 'login-page' );
